@@ -1,1 +1,1 @@
-# AI-apparel-ecommerce
+# ecommerce
