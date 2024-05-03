@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Luxurious+Script&display=swap');
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    border-radius: 25px;
+
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5 vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(3.5vw, 10px);
+    /* font-family: Outfit; */
+    padding-bottom: 30px;
+    /* width: 90%; */
+}
+.header-contents p{
+    max-width: 100%;
+    color: rgb(233, 232, 232);
+    font-size: 1vw;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    padding-bottom: 20px;
+}
+.header-contents button{
+    border: 2px solid rgba(0, 48, 35, 0.778);;
+    color: whitesmoke;
+    font-weight: 500;
+    padding: 0.8vw 1.3vw;
+    background-color: rgba(0, 48, 35, 0.778);;
+    font-size: max(1vw, 13px);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header-contents button:hover{
+    background-color: rgba(0, 78, 56, 0.233);
+    color: rgb(233, 232, 232);
+    border: 1.5px solid rgba(4, 4, 4, 0.778);
+    transition: 1.5s;
+}
+
+
+/* makjng the header more responsisve for other devices */
+@media (max-width:1050px) {
+    .header-contents {
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+    .header-contents {
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
+}

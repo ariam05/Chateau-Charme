@@ -1,0 +1,72 @@
+.explore-product {
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.explore-product h1{
+    padding-top: 30px;
+    color: black;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.explore-product-text{
+    /* max-width: 97%; */
+    color: rgb(22, 22, 22);
+    font-size: 17px;
+    padding-bottom: 40px;
+
+}
+.categories {
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 80;
+}
+
+.explore-product-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+    
+}
+.explore-product-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-product-list-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.explore-product-list-item p{
+    padding-top: 10px;
+    margin-top: 10px;
+    color: black;
+    font-size: max(1.2vw, 16px);
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.explore-product hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: rgb(232, 231, 231);
+    border: none;
+}
+.explore-product-list-item .active{
+    border: 3px solid rgba(1, 64, 46, 0.857);
+    padding: 2px;
+}
+
+/* making explore menu responsive for all devices / sizes */
+@media (max-width:1050px) {
+    .explore-product-text {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}

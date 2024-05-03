@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  scroll-behavior: smooth;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+  padding: 15px;
+  min-height: 100vh;
+  /* background: url('assets/cover_img.png') no-repeat; */
+  background-color: whitesmoke;
+  margin-top: 40px;
+
+}
+a{
+  text-decoration: none;
+  /* font-family: Luxurious Roman; */
+  color: inherit;
+}
+.app {
+  width: 80%;
+  margin: auto;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
