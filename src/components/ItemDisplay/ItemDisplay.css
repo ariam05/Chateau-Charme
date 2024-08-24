@@ -14,3 +14,26 @@
     gap: 30px;
     row-gap: 50px;
 }
+
+.search-input {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.highlight {
+    background-color: rgba(0, 78, 56, 0.362);
+    font-weight: bold;
+    color: #000;
+}
+
+
+.search-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #333;
+}
